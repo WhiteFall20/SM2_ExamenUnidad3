@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.informe_tecnico.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_sede"
+        android:name="com.example.informe_tecnico.ui.sede.SedeFragment"
+        android:label="@string/menu_sede"
+        tools:layout="@layout/fragment_sede" />
+
+    <fragment
+        android:id="@+id/nav_area"
+        android:name="com.example.informe_tecnico.ui.area.AreaFragment"
+        android:label="@string/menu_area"
+        tools:layout="@layout/fragment_area" />
+    <fragment
+        android:id="@+id/nav_estado"
+        android:name="com.example.informe_tecnico.ui.estado.EstadoFragment"
+        android:label="@string/menu_estado"
+        tools:layout="@layout/fragment_estado" />
+    <fragment
+        android:id="@+id/nav_tipo_equipo"
+        android:name="com.example.informe_tecnico.ui.tipo_equipo.Tipo_EquipoFragment"
+        android:label="@string/menu_tipo_equipo"
+        tools:layout="@layout/fragment_tipo_equipo" />
+    <fragment
+        android:id="@+id/nav_falla"
+        android:name="com.example.informe_tecnico.ui.falla.FallaFragment"
+        android:label="@string/menu_falla"
+        tools:layout="@layout/fragment_falla" />
+    <fragment
+        android:id="@+id/nav_otras_activiades"
+        android:name="com.example.informe_tecnico.ui.o_actividades.OtrasActividadesFragment"
+        android:label="@string/menu_otras_actividades"
+        tools:layout="@layout/fragment_otras_actividades" />
+    <fragment
+        android:id="@+id/nav_informes_tecnicos"
+        android:name="com.example.informe_tecnico.ui.listainforme.InformeTecnicoFragment"
+        android:label="@string/menu_informes"
+        tools:layout="@layout/fragment_informe_tecnico" />
+
+    <fragment
+        android:id="@+id/nav_pdf_informes"
+        android:name="com.example.informe_tecnico.Imprimir_InformePDF"
+        android:label="@string/menu_pdf"
+        tools:layout="@layout/ver_informetecnico" />
+</navigation>

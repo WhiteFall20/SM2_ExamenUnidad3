@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border_shape">
+
+    <!-- Título: Nombre de Area -->
+    <TextView
+        android:id="@+id/txtTituloNomArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Nombre Area"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Nombre del Area -->
+    <TextView
+        android:id="@+id/textViewNombreArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Area"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Descripción de Area -->
+    <TextView
+        android:id="@+id/txtDescripArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Descripción Area"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Descripción de Area -->
+    <TextView
+        android:id="@+id/textViewDescripcionArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción Area"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Nombre de Sede -->
+    <TextView
+        android:id="@+id/txtNomSede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Sede"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Nombre de Sede -->
+    <TextView
+        android:id="@+id/textSede"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sede"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+</LinearLayout>

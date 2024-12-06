@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border_shape">
+
+    <!-- Título: Nombre de Estado -->
+    <TextView
+        android:id="@+id/txtTituloNombreEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Nombre Estado"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Nombre de Estado -->
+    <TextView
+        android:id="@+id/textViewNombreEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Estado"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Descripción de Estado -->
+    <TextView
+        android:id="@+id/txtDescripEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Descripción Estado"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Descripción de Estado -->
+    <TextView
+        android:id="@+id/textViewDescripcionEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción Estado"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+</LinearLayout>

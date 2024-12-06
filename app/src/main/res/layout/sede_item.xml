@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border_shape">
+
+    <!-- Título: Nombre de Sede -->
+    <TextView
+        android:id="@+id/txtTituloNombreSede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Nombre de Sede"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Nombre de la Sede -->
+    <TextView
+        android:id="@+id/textViewNombreSede"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Sede"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Descripción de Sede -->
+    <TextView
+        android:id="@+id/txtDescripSede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Descripción de Sede"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Descripción de la Sede -->
+    <TextView
+        android:id="@+id/textViewDescripcionSede"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción Sede"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+</LinearLayout>

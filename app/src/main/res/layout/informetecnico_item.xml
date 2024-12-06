@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border_shape">
+
+    <!-- Título: Titulo de Informe -->
+    <TextView
+        android:id="@+id/txtTituloInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Titulo de Informe"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Titulo de Informe -->
+    <TextView
+        android:id="@+id/textViewTituloInforme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Falla"
+        android:textSize="7sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Nombre de Equipo -->
+    <TextView
+        android:id="@+id/txtNombreEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Nombre de Equipo"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Nombre de Equipo -->
+    <TextView
+        android:id="@+id/textViewNombreEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de Equipo"
+        android:textSize="7sp"
+        android:paddingTop="4dp" />
+
+    <!-- Título: Diagnostico de Equipo -->
+    <TextView
+        android:id="@+id/txtDiagnosticoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Diagnostico de Equipo"
+        android:textColor="@color/black"
+        android:textSize="7sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Contenido: Diagnostico de Equipo -->
+    <TextView
+        android:id="@+id/textViewDiagnosticoEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnostico de Equipo"
+        android:textSize="7sp"
+        android:paddingTop="4dp" />
+
+</LinearLayout>

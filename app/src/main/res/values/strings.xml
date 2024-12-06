@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ReporteXpert</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">App ReporteXpert</string>
+    <string name="nav_header_subtitle">¡Bienvenido!</string>
+    <string name="nav_header_desc">Menu de Navegación</string>
+    <string name="action_logout">Cerrar Sesion</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_sede">Sede</string>
+    <string name="menu_area">Area</string>
+    <string name="menu_estado">Estado</string>
+    <string name="menu_tipo_equipo">Tipo Equipo</string>
+    <string name="menu_falla">Falla</string>
+    <string name="menu_otras_actividades">Otras Actividades</string>
+    <string name="menu_informes">Informes Tecnicos</string>
+    <string name="menu_pdf">Descargar Informes</string>
+</resources>

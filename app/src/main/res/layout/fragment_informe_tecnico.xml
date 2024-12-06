@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.listainforme.InformeTecnicoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- Agrega aquí tus TextView, EditText, Buttons, etc. -->
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="CRUD Informes Tecnicos"
+                android:textColor="@color/morado"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/editTextTitulo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Titulo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.774"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/editTextDiagnostico"
+                android:layout_width="369dp"
+                android:layout_height="100dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese el Diagnóstico"
+                android:inputType="textMultiLine"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.048" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/editTextSolucionPrimaria"
+                android:layout_width="369dp"
+                android:layout_height="100dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese la Solucion Primaria"
+                android:inputType="textMultiLine"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.102" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.153" />
+
+            <Spinner
+                android:id="@+id/spinnerAreas"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Areas"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.548"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.168" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedes:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.188" />
+
+            <Spinner
+                android:id="@+id/spinnerSedes"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Sedes"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.202" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.221" />
+
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Estado"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.236" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo Equipo:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.256" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Tipo Equipo"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.271" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Falla:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.29" />
+
+            <Spinner
+                android:id="@+id/spinnerFalla"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Falla"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.306" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otras Actividades:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.324" />
+
+            <Spinner
+                android:id="@+id/spinnerOtrasActividades"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Otras Actividades"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar Fechas:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.358" />
+
+            <EditText
+                android:id="@+id/editTextFechaInforme"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:focusable="false"
+                android:hint="Fecha Informe: dd/mm/aaaa"
+                android:inputType="none"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.375" />
+
+            <EditText
+                android:id="@+id/editTextFechaIngresoEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:focusable="false"
+                android:hint="Fecha Ingreso Equipo: dd/mm/aaaa"
+                android:inputType="none"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.416" />
+
+            <EditText
+                android:id="@+id/editTextFechaSolicitud"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:focusable="false"
+                android:hint="Fecha Solicitud: dd/mm/aaaa"
+                android:inputType="none"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.395" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos de Equipo:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.435" />
+
+            <EditText
+                android:id="@+id/editTextDescripcionTipoEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese la Descripcion Tipo Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.452" />
+
+            <EditText
+                android:id="@+id/editTextSerieEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese el Numero de Serie de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.473" />
+
+            <EditText
+                android:id="@+id/editTextNombreEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese Nombre de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.494" />
+
+            <EditText
+                android:id="@+id/editTextCodigoPatrimonialEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese el Codigo Patrimonial de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.516" />
+
+            <EditText
+                android:id="@+id/editTextMarcaEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese Marca de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.538" />
+
+            <EditText
+                android:id="@+id/editTextCodigoInternoEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese el Codigo Interno de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.56" />
+
+            <EditText
+                android:id="@+id/editTextModeloEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese Modelo de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.581" />
+
+            <EditText
+                android:id="@+id/editTextColorEquipo"
+                android:layout_width="369dp"
+                android:layout_height="37dp"
+                android:layout_margin="7dp"
+                android:hint="Ingrese el Color de Equipo"
+                android:inputType="text"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.603" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción:"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.621" />
+
+            <EditText
+                android:id="@+id/editTextMantenimiento"
+                android:layout_width="369dp"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Ultimo Mantenimiento mes, día, año"
+                android:inputType="textMultiLine"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.661" />
+
+            <EditText
+                android:id="@+id/editTextObservaciones"
+                android:layout_width="369dp"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Ingrese Observaciones del Equipo"
+                android:inputType="textMultiLine"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.711" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/amarillo"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    app:icon="@drawable/baseline_edit_note_24"/>
+
+                <Button
+                    android:id="@+id/buttonEliminate"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="@color/rojo"
+                    android:gravity="center"
+                    app:icon="@drawable/baseline_delete_forever_24"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewInformeTecnico"
+                android:layout_width="414dp"
+                android:layout_height="506dp"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <!-- Repite para los demás elementos -->
+
+
+            <!-- Your EditText and other views here -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
