@@ -24,16 +24,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin' # Usamos Adoptium (temurin es el nombre oficial para JDK de Adoptium)
 
-      # Paso 3: Cache de dependencias de Gradle (opcional)
-      - name: Cache Gradle dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      # Paso 4: Configurar Android SDK
+      # Paso 3: Configurar Android SDK
       - name: Set up Android SDK
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -43,10 +34,10 @@ jobs:
           force-avd-creation: true
           script: ./gradlew connectedDebugAndroidTest --no-daemon  
 
-      # Paso 5: Construir el proyecto Android con Gradle
+      # Paso 4: Construir el proyecto Android con Gradle
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
-      # Paso 6: Ejecutar pruebas unitarias
+      # Paso 5: Ejecutar pruebas unitarias
       - name: Run unit tests
         run: ./gradlew testDebugUnitTest --no-daemon
