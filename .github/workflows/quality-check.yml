@@ -41,6 +41,7 @@ jobs:
           arch: x86_64
           target: google_apis
           force-avd-creation: true
+          script: ./gradlew connectedDebugAndroidTest --no-daemon  
 
       # Paso 5: Construir el proyecto Android con Gradle
       - name: Build with Gradle
